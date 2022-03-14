@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "music": [
+      {
+        "acrid": "8238ea5e24b06df11626347a9553bb8b",
+        "score": 100,
+        "title": "Tum Se Hi",
+        "album": {
+          "name": "Jab We Met"
+        },
+        "exids": "musicbrainz",
+        "genres": [
+          {
+            "name": "Films\/Games"
+          },
+          {
+            "name": "Bollywood"
+          }
+        ],
+        "db_end_time_offset_ms": 92340,
+        "sample_begin_time_offset_ms": 0,
+        "artists": [
+          {
+            "name": "Mohit Chauhan"
+          }
+        ],
+        "play_offset_ms": 92760,
+        "result_from": 3,
+        "release_date": "2007-09-21",
+        "db_begin_time_offset_ms": 80760,
+        "sample_end_time_offset_ms": 11580,
+        "label": "T-Series",
+        "duration_ms": 321000,
+        "external_ids": {
+          "upc": "8902894623223",
+          "isrc": "INS180705982"
+        },
+        "external_metadata": {
+          "youtube": {
+            "vid": "uzkGfzLoE_s"
+          },
+          "deezer": {
+            "album": {
+              "name": "Jab We Met"
+            },
+            "track": {
+              "id": "71439341",
+              "name": "Tum Se Hi"
+            },
+            "artists": [
+              {
+                "name": "Mohit Chauhan"
+              }
+            ]
+          },
+          "spotify": {
+            "album": {
+              "name": "30 Unforgettable Bollywood Song"
+            },
+            "track": {
+              "id": "1pTDlafOi9KpuPrHrvJ0ga",
+              "name": "Tum Se Hi (From \"Jab We Met\")"
+            },
+            "artists": [
+              {
+                "name": "Kareena Kapoor"
+              },
+              {
+                "name": "Mohit Chauhan"
+              },
+              {
+                "name": "Shahid Kapoor"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "timestamp_utc": "2022-03-14 12:07:20"
+  },
+  "cost_time": 1.430999994278,
+  "status": {
+    "msg": "Success",
+    "version": "1.0",
+    "code": 0
+  },
+  "result_type": 0
+}
