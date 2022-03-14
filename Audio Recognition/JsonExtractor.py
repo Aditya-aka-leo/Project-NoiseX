@@ -45,7 +45,7 @@ import pydub    # pydub is a python library for manipulating audio
 from pydub import AudioSegment  # AudioSegment is a class for representing an audio file and a way to slice and manipulate it
 import os 
 
-base_dir = r"E:\Project\audio_clustering\music_recognition\Audio Recognition"   # change this to your own directory
+base_dir = r"D:\Git NoiseX\NoiseX modi repo\Project-NoiseX\Audio Recognition"   # change this to your own directory
 # export_dir = r"E:\Project\audio_clustering\songs\export"    # if you want to export audio file to some other directory, uncomment this and in line 57 change base_dir to export_dir
 
 sound = AudioSegment.from_mp3(os.path.join(base_dir, "believer.mp3"))
