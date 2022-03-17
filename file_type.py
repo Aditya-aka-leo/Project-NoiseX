@@ -1,7 +1,7 @@
 
-import fleep
-def filetype(a):
+
+def extension_extractor(a):
+    import fleep
     var = fleep.get(input= a )
-    
-result = filetype(a)
+    return var
 
