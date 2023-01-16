@@ -7,7 +7,7 @@ def genre(s_ap):
         lis=[]
         num_sample_per_segment = int(SAMPLES_PER_TRACK / num_segments)
         expected_num_mfcc_vectors_per_segment = math.ceil(num_sample_per_segment / hop_length) 
-        ap=os.path.join("D:\Project-NoiseX\Integrated\Genre Classification\Songs",apath)
+        ap=os.path.join("/home/ubuntu/Project-NoiseX/songs",apath)
         signal,sr = librosa.load(ap,sr = SAMPLE_RATE)
         for s in range(num_segments):
             start_sample = num_sample_per_segment * s
@@ -53,12 +53,6 @@ def genre(s_ap):
         return gen
 
     return genre_gen(s_ap)
-
-
-
-
-
-
             
         
          

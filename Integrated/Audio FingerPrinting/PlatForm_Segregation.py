@@ -1,7 +1,7 @@
 def plat():
     data={"Name": [] ,"Spotify Link : " : [] ,"Youtube Link : " : [],"Deezer Link : " : [] }
     import json
-    f = open(r'D:\Project-NoiseX\Integrated\Audio FingerPrinting\audio_details.json')
+    f = open(r'/home/ubuntu/Project-NoiseX/Integrated/Audio FingerPrinting/audio_details.json')
     scrapped_json = json.load(f)
     cropped = scrapped_json['metadata']['music'][0]['external_metadata']
     song_name = "Not Available"

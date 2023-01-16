@@ -6,4 +6,4 @@ import json
 import numpy as np
 import tensorflow
 from pathlib import Path
-model_genre = tensorflow.keras.models.load_model(r"D:\Project-NoiseX\Integrated\Genre Classification\saved model")
+model_genre = tensorflow.keras.models.load_model(r"/home/ubuntu/Project-NoiseX/Integrated/Genre Classification/saved model")

@@ -8,8 +8,9 @@ def audio_finger_print(song_name):
     import json
     import requests
     from subprocess import Popen
-    json_path = r"D:\Project-NoiseX\Integrated\Audio FingerPrinting\audio_details.json"
+    json_path = r"/home/ubuntu/Project-NoiseX/Integrated/Audio FingerPrinting/audio_details.json"
     import PlatForm_Segregation as pt
+    import ffprobe
     '''
     Replace "###...###" below with your project's host, access_key and access_secret.
     '''
@@ -33,11 +34,12 @@ def audio_finger_print(song_name):
     from pydub import AudioSegment  
     import os 
 
-    base_dir = r"D:\Project-NoiseX\Integrated\Audio FingerPrinting" 
-    song_dir=r"D:\Project-NoiseX\Integrated\Genre Classification\Songs"
-    song_dir=song_dir+"./"+song_name
+    base_dir = r"/home/ubuntu/Project-NoiseX/Integrated/Audio FingerPrinting/" 
+    song_dir=r"/home/ubuntu/Project-NoiseX/songs/"
+    song_dir=os.path.join(song_dir,song_name)
+   # song_dir=song_dir+"./"+song_name
 
-    sound = AudioSegment.from_mp3(song_dir)
+    sound = AudioSegment.from_file(song_dir, "mp3")
 
     first_cut_point = (1*60 + 18) * 1000      
     last_cut_point = (1*60 + 33) * 1000    
@@ -66,14 +68,9 @@ def audio_finger_print(song_name):
     content = json.loads(jsonString)    
 
 
-    with open(r'D:\Project-NoiseX\Integrated\Audio FingerPrinting\audio_details.json', 'w') as outfile:     
+    with open(r'/home/ubuntu/Project-NoiseX/Integrated/Audio FingerPrinting/audio_details.json', 'w') as outfile:     
         outfile.write(jsonString)
 
     print_links=pt.plat()
+    
     return print_links
-
-
-
-
-
-
