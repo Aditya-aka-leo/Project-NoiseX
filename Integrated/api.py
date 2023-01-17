@@ -5,12 +5,14 @@ sys.path.append(r'/home/ubuntu/Project-NoiseX/songs')
 from flask import Flask, request
 from genre_classf_CNN import * 
 from JsonExtractor import *
+from download_file import *
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return xd
+    url=request.args.get('url')
+    return download_from_s3(url)
 
 @app.route('/gc')
 def gc():
