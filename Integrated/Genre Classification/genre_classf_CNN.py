@@ -21,7 +21,7 @@ def genre(s_ap):
         X = save_mfcc(apath=s_ap,num_segments=10)
         X = np.array(X)
         X = X[...,np.newaxis] 
-        print(X)
+       # print(X)
         prediction = model_genre.predict(X)
         prediction_index = np.argmax(prediction,axis=1)
         # print(prediction_index)

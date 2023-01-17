@@ -47,17 +47,16 @@ def plat():
         http_spotify = "https://open.spotify.com/track/"+ "{}".format(spotify_id) + "?autoplay=true"
         data["Spotify Link : "].append(http_spotify)
         # print(http_spotify)
-        print("\n")
+     
     if youtube_id != "none":
         http_youtube = "https://www.youtube.com/watch?v=" +"{}".format(youtube_id)
         # print(http_youtube)
         data["Youtube Link : "].append(http_youtube)
-        print("\n")
+ 
     if deezer_id != "none":
         http_deezer = "https://www.deezer.com/en/track/" +"{}".format(deezer_id)
         # print(http_deezer)
         data["Deezer Link : "].append(http_deezer)
-        print("\n")
     return data
 
 
