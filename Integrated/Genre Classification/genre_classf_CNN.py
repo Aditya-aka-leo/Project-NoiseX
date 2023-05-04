@@ -7,12 +7,12 @@ def genre(s_ap):
         lis=[]
         num_sample_per_segment = int(SAMPLES_PER_TRACK / num_segments)
         expected_num_mfcc_vectors_per_segment = math.ceil(num_sample_per_segment / hop_length) 
-        ap=os.path.join("/home/ubuntu/Project-NoiseX/songs",apath)
+        ap=os.path.join("/home/leo/Integrated/songs",apath)
         signal,sr = librosa.load(ap,sr = SAMPLE_RATE)
         for s in range(num_segments):
             start_sample = num_sample_per_segment * s
             finish_sample = start_sample + num_sample_per_segment
-            mfcc = librosa.feature.mfcc(signal[start_sample:finish_sample],sr=sr,n_fft=n_fft, n_mfcc=n_mfcc,hop_length=hop_length)
+            mfcc = librosa.feature.mfcc(y=signal[start_sample:finish_sample],sr=sr,n_fft=n_fft, n_mfcc=n_mfcc,hop_length=hop_length)
             mfcc = mfcc.T
             if len(mfcc) == expected_num_mfcc_vectors_per_segment : 
                 lis.append(mfcc)

@@ -1,0 +1,18 @@
+2023-05-04 03:03:34.136619: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-05-04 03:03:34.167895: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-05-04 03:03:34.168188: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-04 03:03:34.719963: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/home/leo/.local/lib/python3.10/site-packages/pydub/utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+ * Serving Flask app 'api'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.5:5000
+Press CTRL+C to quit
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 111ms/step
+122.184.66.136 - - [04/May/2023 03:03:50] "GET /?url=1683164001788.wav HTTP/1.1" 200 -
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 16ms/step
+122.184.66.136 - - [04/May/2023 03:04:55] "GET /?url=1683164001788.wav HTTP/1.1" 200 -
